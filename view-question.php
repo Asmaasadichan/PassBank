@@ -68,7 +68,7 @@ function getCourseById($conn, $id)
                     <div class="col-10 text-center">
                     <?php if (!empty($question['file_path'])): ?>
     <?php 
-        $filePath = htmlspecialchars($question['image']);
+        $filePath = htmlspecialchars($question['file_path']);
         $ext = strtolower(pathinfo($filePath, PATHINFO_EXTENSION));
     ?>
 
